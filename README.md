@@ -49,5 +49,4 @@ Contributions to this project are welcome. Here's how you can contribute:
 - Push to the branch (`git push origin feature-xyz`).
 - Create a new Pull Request.
 
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
+
