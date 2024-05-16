@@ -1,64 +1,53 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "id": "21febb72-fefe-4ae5-a5c2-d2b0b93288d5",
-   "metadata": {},
-   "source": [
-    "# Air Quality Analysis Project\n",
-    "\n",
-    "## Overview\n",
-    "This project utilizes Apache Spark to perform an analysis of air quality data. The analysis is carried out in a Jupyter Notebook environment, focusing on the exploration and processing of air quality measurements to derive insights about pollution levels.\n",
-    "\n",
-    "## Dataset\n",
-    "The dataset used in this project is titled `air-quality-data.csv` and contains various air quality measurements such as CO, NOx, NO2, and other pollutants recorded over time. Data attributes include timestamps, gas concentrations, and related environmental conditions.\n",
-    "\n",
-    "## Setup Instructions\n",
-    "To run this project, follow these steps:\n",
-    "\n",
-    "1. **Environment Setup**:\n",
-    "   - Ensure that Java Development Kit (JDK) and Apache Spark are installed.\n",
-    "   - Use the following commands to set up Spark:\n",
-    "     ```\n",
-    "     apt-get install openjdk-8-jdk-headless -qq > /dev/null\n",
-    "     wget -q https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz\n",
-    "     tar xf spark-3.5.0-bin-hadoop3.tgz\n",
-    "     ```\n",
-    "\n",
-    "2. **Python Dependencies**:\n",
-    "   - Install Python dependencies using the following command:\n",
-    "     ```\n",
-    "     pip install -r requirements.txt\n",
-    "     ```\n",
-    "\n",
-    "3. **Launching the Notebook**:\n",
-    "   - Start the Jupyter Notebook environment and open `analysis-and-prediction.ipynb`.\n",
-    "   - Follow the steps in the notebook to perform the analysis.\n",
-    "\n",
-    "## Running the Analysis\n",
-    "Execute the cells in the notebook `analysis-and-prediction.ipynb` sequentially to load the data, perform exploratory data analysis, and run various data processing steps.\n"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.11.7"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+# Air Quality Analysis Project
+
+## Overview
+This project utilizes Apache Spark to perform detailed analysis on air quality data. The primary focus is on exploring and processing measurements of pollutants to derive insights and understand temporal pollution trends.
+
+## Prerequisites
+Before you begin, ensure you have the following installed:
+- Python 3.8 or later
+- Java Development Kit (JDK) version 8
+- Apache Spark 3.5.0
+
+## Dataset
+The dataset, `air-quality-data.csv`, includes multiple air quality indicators such as Carbon Monoxide (CO), Nitrogen Oxides (NOx), and Nitrogen Dioxide (NO2). Measurements are timestamped, providing a comprehensive view of the data across various times of the day.
+
+## Features
+- Data loading and preprocessing using Spark DataFrames.
+- Exploratory Data Analysis (EDA) to identify trends and anomalies.
+- Data visualization to depict the findings and patterns in pollution levels.
+- Model development to predict future pollution levels based on historical data.
+
+## Setup Instructions
+Follow these steps to set up and run the project:
+
+### 1. Environment Setup
+Ensure Java and Spark are correctly installed and configured:
+```
+apt-get install openjdk-8-jdk-headless -qq > /dev/null
+wget -q https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz
+tar xf spark-3.5.0-bin-hadoop3.tgz
+```
+
+### 2. Python Dependencies
+Install necessary Python libraries:
+```
+pip install -r requirements.txt
+```
+
+### 3. Launching the Notebook
+Start Jupyter Notebook and open `analysis-and-prediction.ipynb`:
+
+## Running the Analysis
+Execute the cells sequentially to perform data loading, EDA, visualization, and modeling.
+
+## Contributing
+Contributions to this project are welcome. Here's how you can contribute:
+- Fork the repository.
+- Create a new branch for your modifications (`git checkout -b feature-xyz`).
+- Commit your changes (`git commit -am 'Add some feature'`).
+- Push to the branch (`git push origin feature-xyz`).
+- Create a new Pull Request.
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
